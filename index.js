@@ -27,6 +27,7 @@ app.listen(PORT, () =>
 
 //Configurando a conexao com o Banco de Dados 
  var mongoose = require('mongoose');
+ var mongoURL = process.env.MONGO_DB;
 mongoose.connect(mongoURL); 
 mongoose.Promise = global.Promise; 
 
